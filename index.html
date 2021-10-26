@@ -1,0 +1,201 @@
+<html>
+  <head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;}
+			body {
+				background-color: white;
+			font-family: 'Caveat', cursive;}
+
+.content{
+	display: flex;
+	width: 100%;
+	height: 30vw;
+    color: #fff;
+    flex-direction: column;
+
+}
+ .row{
+	padding: 20vw 0; 
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.video{
+	padding: 30vw 0; 
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin : 10px 0;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+}
+.row img {
+	width: 50%;
+}
+h4{
+	font-size: 7vw;
+	margin: 4px auto;
+	text-align: center;
+	color: #0066ff;
+
+}
+h2{
+font-size: 3vw;
+	margin: 4px auto;
+	text-align: center;
+	color: #161D6F;
+}
+.audio{
+	display: block;
+}
+
+#k1{
+	background-color:#FCD1D1;
+}
+#k2{
+	background-color: #AEE1E1
+}
+#k3{
+	background-color: #F9DFDC ;
+}
+#k4{
+	background-color: #D3E0DC;
+}
+
+
+
+iframe{
+	width: 560px;
+	height:315px;
+	padding: 20px;
+	border :3px solid rgb(172, 2, 149);
+}
+
+</style>
+	
+  </head>
+  <body>
+<div id="player"></div>
+<script>
+			var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '720',
+          width: '1280',
+          videoId: 'NKCZ7O-8z-Y',
+          playerVars: {
+            'playsinline': 1
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+			function onPlayerReady(event) {
+        event.target.playVideo();
+      }</script>
+
+  <div class="content">
+    <div class="row" id="k2">
+    	<div>
+		 <h1><marquee scrollamount="12" width="560" height="50px" style="color: #957DAD">Di Click Dulu Biar Gak Sepi</marquee></h1> 
+		</div>
+		<div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/h3InVcuynIw?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	</div>
+			<div><br>
+		<h2>klo udah scroll yuu</h2> <br></div>
+	</div>
+    <div class="row" id="k3">
+	  <h4 > Hallo kamuuu</h4>
+	</div>
+    <div class="row" id="k4">
+	  <h4 > Yang hari ini lagi ulang tahun </h4>
+	</div>
+    <div class="row" id="k1">
+	  <h4> cieee udah nambah tua aja nih </h4>
+	</div>
+	<div class="row" id="k2">
+	  <h4> sehat selalu yahh </h4>
+	</div>
+    <div class="row" id="k3">
+	  <h4> pokonya harus lebih baik lagi </h4>
+	</div>
+    <div class="row" id="k4">
+	  <h4> gk boleh males2an </h4>
+	</div>
+    <div class="row" id="k1">
+	  <h4> harus lebih rajin belajarnyaa </h4>
+	</div>
+	<div class="row" id="k2">
+	  <h4> Gk boleh cepet nyerah </h4>
+	</div>
+    <div class="row" id="k3">
+	  <h4> jangan lupa PU nya okeyy </h4>
+	</div>
+    <div class="row" id="k4">
+	  <h4> awas aja klo gk ngasih  </h4>
+	</div>
+    <div class="row" id="k1">
+	  <h4> ngamukk nihh </h4>
+	</div>
+	<div class="row" id="k2">
+	  <h4> heheh canda2 </h4>
+	</div>
+    <div class="row" id="k3">
+	  <h4> yaudhlah pokonya wish you all the best </h4>
+	</div>
+    <div class="row" id="k4">
+	  <h4> babay... </h4>
+	</div>
+	<div class="row" id="k1">
+		<style scoped="scoped" type="text/css">
+			#countdownpenaindigo {color:#c300ff;font-family:Oswald, Arial, Sans-serif;font-size:3vw;text-align:center;padding:10px 0;font-weight:normal;}
+			.teks {color:#0066ff;font-size: 3vw;}
+			.bold {font-weight: bold;color:#c300ff;font-size: 3vw;}
+			</style>
+			<div id="countdownpenaindigo">
+			<span id="countdown"></span>
+			</div>
+			<script type="text/javascript">
+			var target_date = new Date("Nov 15, 2021").getTime();
+			var days, hours, minutes, seconds;
+			var countdown = document.getElementById("countdown");
+			setInterval(function () {
+			var current_date = new Date().getTime();
+			var seconds_left = (target_date - current_date) / 1000;
+			days = parseInt(seconds_left / 86400);
+			seconds_left = seconds_left % 86400;
+			hours = parseInt(seconds_left / 3600);
+			seconds_left = seconds_left % 3600;
+			minutes = parseInt(seconds_left / 60);
+			seconds = parseInt(seconds_left % 60);
+			  countdown.innerHTML = days + " <span class='teks'>Days</span> " + hours + " <span class='teks'>Hours</span> "
+			  + minutes + " <span class='teks'>Minutes</span> " + seconds + " <span class='teks'>Seconds </span> " + "<br/><span class='teks'>Before Sabrina's </span><span class='bold'>18</span><span class='teks'>th Birthdays</span>";
+			}, 1000);
+			
+			</script>
+	</div>
+	<div>
+
+</div>
+</div>
+  </body>
+  
+</html>
